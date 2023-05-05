@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    width: 200px;
+    margin: 150px;
+    position: relative;
+    justify-content: center;
+
+}
+
+div[class^="square_"] {
+    width: 100px;
+    height: 100px;
+    transition: all 1s ease-in-out;
+}
+
+.square_red {
+    background-color: red;
+    transform-origin: left top;
+}
+
+.square_blue {
+    background-color: blue;
+    transform-origin: left bottom;
+}
+
+.square_yellow {
+    background-color: yellow;
+    transform-origin: right top;
+}
+
+.square_green {
+    background-color: green;
+    transform-origin: right bottom;
+}
+
+.container:hover .square_blue {
+    transform: rotate(-90deg);
+}
+
+.container:hover .square_red {
+    transform: rotate(90deg);
+}
+
+.container:hover .square_yellow {
+    transform: rotate(-90deg);
+}
+
+.container:hover .square_green {
+    transform: rotate(90deg);
+}
+
+.text {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}

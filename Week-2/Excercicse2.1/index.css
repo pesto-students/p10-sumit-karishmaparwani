@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    text-align: center;
+    flex-flow: column;
+    background-color: khaki;
+}
+
+section {
+    background-color: antiquewhite;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    border: 2px solid;
+    margin: 1px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    padding: 2em;
+}
+
+.form {
+    display: flex;
+    background-color: antiquewhite;
+    padding: 1em;
+    justify-content: center;
+}
+
+#image {
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.radioOptions {
+    display: flex;
+    padding: 1em;
+
+    justify-content: space-between;
+}
+
+.form-control {
+    padding: 0.5em;
+}
+
+input:hover [type="submit"] {
+    color: white;
+    background-color: blue;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+img {
+    width: 20em;
+}
