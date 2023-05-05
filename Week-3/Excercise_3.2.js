@@ -1,6 +1,7 @@
 //Bind Example
 function multiply(a,b){
-
+    console.log(arguments,"Printing values");
+    console.log(arguments[0] * arguments[1])
     return this.a * this.b;
 }
 
@@ -22,7 +23,7 @@ console.log(callResult);
 
 var number = [8,5]
 
-const applyResult = multiply.apply(number);
+const applyResult = multiply.apply({a:4,b:2},number);
 
 
 console.log(applyResult,"Apply result");
