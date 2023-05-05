@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato';
+}
+
+
+.sideBar {
+    display: flex;
+    flex-flow: column;
+    width: 45px;
+    background-color: #f1f1f1;
+    height: 100vh;
+}
+
+.sideBar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    height: 25vh;
+}
+
+.container {
+    display: flex;
+    flex-flow: row;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    height: 100vh;
+    flex-flow: column;
+    width: calc(100% - 45px);
+}
+
+.header {
+    display: flex;
+    background-color: #3d3a3a;
+    height: 310px;
+    flex-flow: row;
+}
+
+.cover {
+    padding: 30px;
+}
+
+.details {
+    display: flex;
+    flex-flow: column;
+}
+
+.current {
+    padding: 30px;
+    color: white;
+}
+
+.options {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    color: white;
+    margin-top: 140px;
+    list-style-type: none;
+}
+
+.playlist {
+    padding: 10px;
+}
+
+td {
+    padding: 15px;
+}
+
+td button {
+    color: blue;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+table {
+    width: -webkit-fill-available;
+    border-spacing: 0;
+}
+
+.playOptions {
+    display: flex;
+    margin: auto 65%;
+    width: 500px;
+    justify-content: space-between;
+    color: white;
+    list-style-type: none;
+
+}
+
+footer {
+    background-color: rgb(67, 104, 155);
+    display: flex;
+    width: 100vw;
+    padding: 20px;
+}
+
+.footerImg {
+    height: 100px;
+
+}
+
+.footerDetails {
+    display: flex;
+    padding: 25px;
+}
